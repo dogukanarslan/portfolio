@@ -6,7 +6,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Dogukan Arslan'
+  title: 'Doğukan Arslan'
 };
 
 export default function RootLayout({
@@ -16,11 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} bg-[#111010] text-white max-w-2xl mx-auto mt-14`}
-      >
-        <Navbar />
-        <main className="mt-20">{children}</main>
+      <body className={`${inter.className} bg-night mx-auto text-sm`}>
+        <main className="text-dawn">{children}</main>
       </body>
     </html>
   );
