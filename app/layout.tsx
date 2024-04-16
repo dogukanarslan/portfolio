@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-night mx-auto text-sm`}>
-        <main className="text-dawn">{children}</main>
+        <main className="text-dawn h-screen">{children}</main>
       </body>
     </html>
   );
