@@ -1,3 +1,5 @@
+import { GitHub, Linkedin } from 'react-feather';
+
 export default function Home() {
   return (
     <div className="flex max-w-7xl mx-auto h-full">
@@ -23,13 +25,19 @@ export default function Home() {
           <li>
             <a
               href="https://github.com/dogukanarslan"
-              className="hover:text-neutral-100"
+              className="hover:text-neutral-100 flex items-center gap-x-2"
             >
+              <GitHub />
               GitHub
             </a>
           </li>
           <li>
-            <a href="https://tr.linkedin.com/in/dogukanarslan">LinkedIn</a>
+            <a
+              href="https://tr.linkedin.com/in/dogukanarslan"
+              className="hover:text-neutral-100 flex items-center gap-x-2"
+            >
+              <Linkedin /> LinkedIn
+            </a>
           </li>
         </ul>
       </div>
