@@ -1,6 +1,21 @@
-import { GitHub, Linkedin } from 'react-feather';
+import { GitHub, Linkedin, Star } from 'react-feather';
 
-export default function Home() {
+const PINNED_REPOS = [
+  'github-searchuser',
+  'rickandmorty',
+  'next-rickandmorty',
+  'films_oop'
+];
+
+async function getData() {
+  const res = await fetch('https://api.github.com/users/dogukanarslan/repos');
+
+  return res.json();
+}
+
+export default async function Home() {
+  const repos = await getData();
+
   return (
     <div className="flex max-w-7xl mx-auto h-full">
       <div className="w-full pl-20 pt-20 pb-20 flex flex-col justify-between h-full">
@@ -41,7 +56,26 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <div className="w-full pl-20 pt-20">repos</div>
+      <div className="w-full pl-20 pt-20 pb-20 h-full">
+        <div className="overflow-y-auto h-full">
+          {repos
+            .filter((repo) => PINNED_REPOS.includes(repo.name))
+            .map((repo: any) => (
+              <div key={repo.id} className="bg-dusk my-2">
+                <a href={repo.html_url} className="p-20 block">
+                  <p className="font-bold text-white">{repo.language}</p>
+                  <h3 className="text-lg mt-3 font-semibold text-white">
+                    {repo.full_name}
+                  </h3>
+                  <p className="mt-3">{repo.description}</p>
+                  <div className="flex gap-x-2 items-center mt-5">
+                    <Star /> {repo.stargazers_count}
+                  </div>
+                </a>
+              </div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }
