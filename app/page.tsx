@@ -1,20 +1,12 @@
-import { GitHub, Linkedin, Star } from 'react-feather';
-
-const PINNED_REPOS = [
-  'github-searchuser',
-  'rickandmorty',
-  'next-rickandmorty',
-  'films_oop'
-];
-
-async function getData() {
-  const res = await fetch('https://api.github.com/users/dogukanarslan/repos');
-
-  return res.json();
-}
+import { promises as fs } from 'fs'
+import { GitHub, Linkedin, Star } from 'react-feather'
+import { Experience } from './components/Experience'
+import { Education } from './components/Education'
+import { Projects } from './components/Projects'
 
 export default async function Home() {
-  const repos = await getData();
+  const file = await fs.readFile(process.cwd() + '/app/data.json', 'utf-8')
+  const data = JSON.parse(file)
 
   return (
     <div className="flex max-w-7xl mx-auto h-full">
@@ -57,25 +49,12 @@ export default async function Home() {
         </ul>
       </div>
       <div className="w-full pl-20 pt-20 pb-20 h-full">
-        <div className="overflow-y-auto h-full">
-          {repos
-            .filter((repo) => PINNED_REPOS.includes(repo.name))
-            .map((repo: any) => (
-              <div key={repo.id} className="bg-dusk my-2">
-                <a href={repo.html_url} className="p-20 block">
-                  <p className="font-bold text-white">{repo.language}</p>
-                  <h3 className="text-lg mt-3 font-semibold text-white">
-                    {repo.full_name}
-                  </h3>
-                  <p className="mt-3">{repo.description}</p>
-                  <div className="flex gap-x-2 items-center mt-5">
-                    <Star /> {repo.stargazers_count}
-                  </div>
-                </a>
-              </div>
-            ))}
+        <div className="overflow-y-auto h-full space-y-10">
+          <Experience experience={data.experience} />
+          <Education education={data.education} />
+          <Projects projects={data.projects} />
         </div>
       </div>
     </div>
-  );
+  )
 }

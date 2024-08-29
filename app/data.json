@@ -1,0 +1,48 @@
+{
+  "experience": [
+    {
+      "name": "Lifemote Networks",
+      "startDate": "November 2021",
+      "endDate": "Present",
+      "position": "Frontend Engineer"
+    },
+    {
+      "name": "KolayBi'",
+      "startDate": "January 2020",
+      "endDate": "November 2021",
+      "position": "Frontend Developer"
+    }
+  ],
+  "education": [
+    {
+      "name": "Boğaziçi University",
+      "graduation": "June 2013",
+      "programme": "BSc, Civil Engineering"
+    },
+    {
+      "name": "Özyeğin University",
+      "graduation": "June 2019",
+      "programme": "BSc, Civil Engineering"
+    }
+  ],
+  "projects": [
+    {
+      "name": "github-searchuser",
+      "url": "https://github.com/dogukanarslan/github-searchuser",
+      "languages": ["TypeScript"],
+      "description": "This is a single page application that allows you to find GitHub users."
+    },
+    {
+      "name": "cocktails",
+      "url": "https://github.com/dogukanarslan/cocktails",
+      "languages": ["JavaScript", "NextJS"],
+      "description": "This is a single page application that rendered on the server side. You can search drinks with the selected filter"
+    },
+    {
+      "name": "rickandmorty",
+      "url": "https://github.com/dogukanarslan/rickandmorty",
+      "languages": ["JavaScript", "NextJS"],
+      "description": "Rick and Morty with NextJS"
+    }
+  ]
+}
