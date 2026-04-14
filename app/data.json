@@ -17,7 +17,7 @@
     {
       "name": "Boğaziçi University",
       "graduation": "June 2013",
-      "programme": "BSc, Civil Engineering"
+      "programme": "MSc, Software Engineering"
     },
     {
       "name": "Özyeğin University",
@@ -33,16 +33,10 @@
       "description": "This is a single page application that allows you to find GitHub users."
     },
     {
-      "name": "cocktails",
-      "url": "https://github.com/dogukanarslan/cocktails",
-      "languages": ["JavaScript", "NextJS"],
-      "description": "This is a single page application that rendered on the server side. You can search drinks with the selected filter"
-    },
-    {
-      "name": "rickandmorty",
-      "url": "https://github.com/dogukanarslan/rickandmorty",
-      "languages": ["JavaScript", "NextJS"],
-      "description": "Rick and Morty with NextJS"
+      "name": "discussed",
+      "url": "https://github.com/dogukanarslan/discussed",
+      "languages": ["TypeScript", "NextJS"],
+      "description": "Discussion platform designed to support structured conversations and community-driven interactions."
     }
   ]
 }
