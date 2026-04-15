@@ -27,6 +27,7 @@ jobs:
       - name: Deploy to username.github.io
         run: |
           cd out
+          touch .nojekyll
           git init
           git config user.name "Dogukan Arslan"
           git config user.email "dogukan2arslan@hotmail.com"
