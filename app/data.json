@@ -16,7 +16,7 @@
   "education": [
     {
       "name": "Boğaziçi University",
-      "graduation": "June 2013",
+      "graduation": "June 2023",
       "programme": "MSc, Software Engineering"
     },
     {
@@ -30,7 +30,7 @@
       "name": "github-searchuser",
       "url": "https://github.com/dogukanarslan/github-searchuser",
       "languages": ["TypeScript"],
-      "description": "This is a single page application that allows you to find GitHub users."
+      "description": "GitHub Search is a web application for browsing GitHub users and repositories."
     },
     {
       "name": "discussed",
