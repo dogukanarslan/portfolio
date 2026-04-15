@@ -15,7 +15,7 @@ export const Experience = (props: Props) => {
       <h1 className="text-2xl font-bold mb-2">Experience</h1>
       <div className="space-y-8">
         {experience.map((value) => (
-          <div key={value.name} className="my-2">
+          <div key={value.name}>
             <p className="font-bold text-lg">{value.position}</p>
             <h3>{value.name}</h3>
             <p>
