@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-w-2xl px-5 my-16 mx-auto text-[#484848] bg-[#f6f5ed] font-serif">
+      <body className="max-w-2xl px-5 my-16 mx-auto bg-background text-foreground font-serif">
         <main>{children}</main>
       </body>
     </html>

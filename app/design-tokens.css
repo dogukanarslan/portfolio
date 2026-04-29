@@ -1,0 +1,32 @@
+:root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f6f5ed;
+  --color-neutral-700: #484848;
+  --color-accent-500: #2f6fed;
+
+  --font-family-body: "Gelasio", serif;
+
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.75rem;
+
+  --color-background: var(--color-neutral-50);
+  --color-surface: var(--color-neutral-0);
+  --color-foreground: var(--color-neutral-700);
+  --color-accent: var(--color-accent-500);
+  --color-border: color-mix(
+    in srgb,
+    var(--color-neutral-700) 18%,
+    var(--color-neutral-0)
+  );
+  --color-focus: var(--color-accent-500);
+}
