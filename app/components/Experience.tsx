@@ -11,19 +11,19 @@ export const Experience = (props: Props) => {
   const { experience } = props;
 
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-2">Experience</h1>
-      <div className="space-y-8">
+    <section>
+      <h1 className="mb-4 text-2xl font-bold">Experience</h1>
+      <div className="space-y-6">
         {experience.map((value) => (
           <div key={value.name}>
-            <p className="font-bold text-lg">{value.position}</p>
-            <h3>{value.name}</h3>
-            <p>
+            <p className="text-lg font-bold">{value.position}</p>
+            <h3 className="mt-1 text-foreground/80">{value.name}</h3>
+            <p className="mt-2 text-sm text-foreground/70">
               {value.startDate} - {value.endDate}
             </p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

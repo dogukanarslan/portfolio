@@ -11,16 +11,16 @@ export default async function Home() {
   return (
     <>
       <div>
-        <h1 className="text-4xl uppercase">Doğukan Arslan</h1>
-        <h2 className="text-2xl my-2">Frontend Engineer</h2>
-        <p>
+        <h1 className="text-4xl uppercase tracking-wide">Doğukan Arslan</h1>
+        <h2 className="mt-2 text-2xl">Frontend Engineer</h2>
+        <p className="mt-4 max-w-xl leading-7 text-foreground/80">
           Highly motivated, self-taught developer with a great passion for
           frontend development. Looking to develop responsive and user-friendly
           web applications along with clean code.
         </p>
       </div>
 
-      <ul className="flex gap-x-4 my-5">
+      <ul className="my-6 flex gap-4">
         <li>
           <a
             href="https://github.com/dogukanarslan"
@@ -40,7 +40,7 @@ export default async function Home() {
           </a>
         </li>
       </ul>
-      <div className="space-y-14">
+      <div className="space-y-12">
         <Experience experience={data.experience} />
         <Education education={data.education} />
         <Projects projects={data.projects} />

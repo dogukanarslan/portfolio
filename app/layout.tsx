@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Navbar from "./Navbar";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Doğukan Arslan"
@@ -16,8 +12,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-w-2xl px-5 my-16 mx-auto bg-background text-foreground font-serif">
-        <main>{children}</main>
+      <body className="bg-background text-foreground font-serif">
+        <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col px-5 py-16">
+          <main className="mt-8">{children}</main>
+        </div>
       </body>
     </html>
   );
