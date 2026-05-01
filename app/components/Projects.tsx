@@ -16,13 +16,13 @@ export const Projects = (props: Props) => {
   return (
     <Card title="Projects">
       {projects.map((value) => (
-        <div key={value.name}>
+        <div key={value.name} className="space-y-2">
           <h3 className="text-lg font-bold">
             <Link href={value.url} target="_blank">
               {value.name}
             </Link>
           </h3>
-          <p className="mt-2 text-foreground/80">{value.description}</p>
+          <p className="text-foreground/80">{value.description}</p>
         </div>
       ))}
     </Card>

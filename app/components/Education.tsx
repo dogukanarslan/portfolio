@@ -16,8 +16,8 @@ export const Education = (props: Props) => {
       {education.map((value) => (
         <div key={value.name} className="space-y-2">
           <p className="text-lg font-bold">{value.programme}</p>
-          <h3 className="mt-1 text-foreground/80">{value.name}</h3>
-          <p className="mt-2 text-sm text-foreground/70">{value.graduation}</p>
+          <h3 className="text-foreground/80">{value.name}</h3>
+          <p className="text-sm text-foreground/70">{value.graduation}</p>
         </div>
       ))}
     </Card>
