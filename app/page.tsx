@@ -40,7 +40,7 @@ export default async function Home() {
           </a>
         </li>
       </ul>
-      <div className="space-y-12">
+      <div className="space-y-6">
         <Experience experience={data.experience} />
         <Education education={data.education} />
         <Projects projects={data.projects} />
