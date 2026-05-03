@@ -1,5 +1,5 @@
 interface Props {
-  title?: string;
+  title: string;
   children: React.ReactNode;
 }
 
@@ -7,11 +7,9 @@ export const Card = (props: Props) => {
   const { title, children } = props;
 
   return (
-    <section className="bg-surface border border-border rounded-md p-4">
-      <div className="space-y-4">
-        {title && <h2 className="text-2xl font-semibold">{title}</h2>}
-        <div className="space-y-4">{children}</div>
-      </div>
+    <section className="border-l-2 border-border pl-5">
+      <h2 className="mb-5 font-bold uppercase">{title}</h2>
+      <div className="space-y-4">{children}</div>
     </section>
   );
 };
