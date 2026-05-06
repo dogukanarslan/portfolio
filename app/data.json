@@ -1,4 +1,11 @@
 {
+  "name": "Doğukan Arslan",
+  "role": "Frontend Engineer",
+  "about": "Highly motivated, self-taught developer with a great passion for frontend development. Looking to develop responsive and user-friendly web applications along with clean code.",
+  "socials": {
+    "github_url": "https://github.com/dogukanarslan",
+    "linkedin_url": "https://tr.linkedin.com/in/dogukanarslan"
+  },
   "experience": [
     {
       "name": "Lifemote Networks",

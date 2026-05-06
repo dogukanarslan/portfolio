@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import { Gelasio } from "next/font/google";
 import "./globals.css";
+import data from "./data.json";
+
+const gelasio = Gelasio({ subsets: ["latin"], variable: "--font-gelasio", weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Doğukan Arslan"
+  title: data.name
 };
 
 export default function RootLayout({
@@ -11,10 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-background text-foreground font-serif">
+    <html lang="en" className={`${gelasio.variable}`}>
+      <body className="bg-background text-foreground">
         <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col px-5 py-16">
-          <main className="mt-8">{children}</main>
+          <main>{children}</main>
         </div>
       </body>
     </html>

@@ -17,7 +17,7 @@ export const Projects = (props: Props) => {
     <Card title="Projects">
       {projects.map((value) => (
         <div key={value.name} className="space-y-2">
-          <h3 className="text-lg font-bold">
+          <h3 className="font-bold">
             <Link href={value.url} target="_blank">
               {value.name}
             </Link>

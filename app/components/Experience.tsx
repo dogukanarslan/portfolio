@@ -16,7 +16,7 @@ export const Experience = (props: Props) => {
     <Card title="Experience">
       {experience.map((value) => (
         <div key={value.name} className="space-y-2">
-          <p className="text-lg font-bold">{value.position}</p>
+          <p className="font-bold">{value.position}</p>
           <h3 className="text-foreground/80">{value.name}</h3>
           <p className="text-sm text-foreground/70">
             {value.startDate} - {value.endDate}

@@ -11,19 +11,17 @@ export default async function Home() {
   return (
     <>
       <div>
-        <h1 className="text-4xl uppercase tracking-wide">Doğukan Arslan</h1>
-        <h2 className="mt-2 text-2xl">Frontend Engineer</h2>
+        <h1 className="text-4xl uppercase tracking-wide">{data.name}</h1>
+        <h2 className="mt-2 text-2xl">{data.role}</h2>
         <p className="mt-4 max-w-xl leading-7 text-foreground/80">
-          Highly motivated, self-taught developer with a great passion for
-          frontend development. Looking to develop responsive and user-friendly
-          web applications along with clean code.
+          {data.about}
         </p>
       </div>
 
       <ul className="my-6 flex gap-4">
         <li>
           <a
-            href="https://github.com/dogukanarslan"
+            href={data.socials.github_url}
             target="_blank"
             className="flex items-center gap-x-2 opacity-70 hover:opacity-100"
           >
@@ -32,7 +30,7 @@ export default async function Home() {
         </li>
         <li>
           <a
-            href="https://tr.linkedin.com/in/dogukanarslan"
+            href={data.socials.linkedin_url}
             target="_blank"
             className="flex items-center gap-x-2 opacity-70 hover:opacity-100"
           >

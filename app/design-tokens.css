@@ -4,7 +4,7 @@
   --color-neutral-700: #484848;
   --color-accent-500: #2f6fed;
 
-  --font-family-body: "Gelasio", serif;
+  --font-family-body: var(--font-gelasio);
 
   --space-0: 0;
   --space-1: 0.25rem;
